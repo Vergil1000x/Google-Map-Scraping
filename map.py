@@ -4,12 +4,12 @@ from selenium.webdriver.chrome.service import Service
 import openpyxl
 
 service = Service(
-    r"C:\Users\koush\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
+    r"C:\Users\Vergil1000\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
 )
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=service, options=options)
 
-file_path = r"C:\Users\koush\Downloads\AesCliMal.xlsx"
+file_path = r"C:\Users\Vergil1000\Downloads\AesCliMal.xlsx"
 workbook = openpyxl.load_workbook(file_path)
 worksheet = workbook.active
 
@@ -36,9 +36,9 @@ def lol(x, y):
 
 
 x = 3.056058
-while x < 3.218067:
+while x <= 3.218067:
     y = 101.647851
-    while y < 101.748686:
+    while y <= 101.748686:
         y += 0.1
         lol(x, y)
     x += 0.1
