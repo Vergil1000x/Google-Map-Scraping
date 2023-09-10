@@ -6,7 +6,7 @@ from arsenic import get_session, browsers, services
 
 website_urls = []
 
-file_path = r"C:\Users\koush\Downloads\AesCliMal.xlsx"
+file_path = r"C:\Users\Vergil1000\Downloads\AesCliMal.xlsx"
 workbook = openpyxl.load_workbook(file_path)
 worksheet = workbook.active
 
@@ -24,14 +24,14 @@ for row in worksheet.iter_rows(
 workbook.close()
 
 
-file_path = r"C:\Users\koush\Downloads\testX.xlsx"
+file_path = r"C:\Users\Vergil1000\Downloads\testX.xlsx"
 workbook = openpyxl.load_workbook(file_path)
 worksheet = workbook.active
 
 
 async def astre(url, limit):
     service = services.Chromedriver(
-        binary=r"C:\Users\koush\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
+        binary=r"C:\Users\Vergil1000\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
     )
     browser = browsers.Chrome()
     browser.capabilities = {
